@@ -1,0 +1,4 @@
+pyautogui
+pydirectinput
+pycryptodome
+psutil
