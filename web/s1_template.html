@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>PC remote control panel</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container-ex1">
+            <h1>Connecting guide</h1>
+            <div class="text-section-cont">
+                <span class="mid bold">1- Install the PCRemoteControl App!</span>
+                <span class="small shift">You can find the apk along with the source code on <a href="https://github.com/theAester/PCRemoteControl.git">github</a></span>
+            </div>
+            <div class="text-section-cont">
+                <span class="mid bold">2- Find the correct IP</span>
+                <span class="small shift">There may be many IP addresses assigned to your PC device. Enter the correct address in the app. We have found the ones below.</span>
+                <ul>%IPS%</ul>
+                <span class="small shift expanded hide">You can find a similar list on your mobile app. You need to match the beginning or the "subnet" of an ip address on your phone to one on the computer for example:</span>
+                <span class="shift mono-fmt ip-addr expanded hide" style="color:#586249;"><span style="background-color: #E1E4D5;">192.168.0</span>.103</span>
+                <span class="shift mono-fmt ip-addr expanded hide" style="color:#586249; margin-top:0;"><span style="background-color: #E1E4D5;">192.168.0</span>.56</span>
+                <span class="small shift expanded hide">is a match.</span>
+                <span class="small shift expanded hide">Once you find a match enter the PC ip address in the "address" field on your phone.<span>
+            </div>
+            <span class="small expand">------- More Details &darr; -------</span>
+            <div class="text-section-cont">
+                <span class="mid bold">3- Enter The security key</span>
+                <span class="small shift">This is the security Key for your connection. Keep it safe!</span>
+            </div>
+                <span class="mid mono-fmt" style="color:red;">%KEY%</span>
+            
+        </div>
+    </main>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
