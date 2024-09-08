@@ -1,4 +1,5 @@
 import json
+from pyautogui import FailSafeException
 
 class Actions:
     def __init__(self, wrapper):
@@ -17,8 +18,10 @@ class Actions:
             case "motion":
                 try:
                     self.handle_motion(obj)
+                except FailSafeException:
+                    print("Warning: do not get close to the corners with the cursor")
                 except Exception as e:
-                    print("Warning: " + e)
+                    print("Warning: " + str(e))
             case "vscroll":
                 self.handle_vscroll(obj)
             case "hscroll":
